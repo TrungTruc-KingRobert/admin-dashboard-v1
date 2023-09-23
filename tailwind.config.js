@@ -5,23 +5,28 @@ export default {
     extend: {
       fontFamily: {
         poppins: ["Poppins"]
+      },
+      animation: {
+        showMenu: "showMenu 0.4s ease forwards"
+      },
+      keyframes: {
+        showMenu: {
+          to: { left: 0 }
+        }
       }
     },
     screens: {
-      "sm": "480px",
-      // => @media (min-width: 480px) { ... }
+      "xl": { "max": "1200px" },
+      // => @media (max-width: 1200px) { ... }
 
-      "md": "768px",
-      // => @media (min-width: 768px) { ... }
+      "lg": { "max": "992px" },
+      // => @media (max-width: 992px) { ... }
 
-      "lg": "992px",
-      // => @media (min-width: 992px) { ... }
+      "md": { "max": "768px" },
+      // => @media (max-width: 768px) { ... }
 
-      "xl": "1200px",
-      // => @media (min-width: 1200px) { ... }
-
-      "2xl": "1536px"
-      // => @media (min-width: 1536px) { ... }
+      "sm": { "max": "480px" }
+      // => @media (max-width: 480px) { ... }
     }
   },
   plugins: []
