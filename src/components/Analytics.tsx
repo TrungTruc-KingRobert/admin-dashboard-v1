@@ -3,7 +3,7 @@ const Analytics = () => {
     <>
       <h1>Analytics</h1>
       <section className="grid grid-cols-[repeat(3,1fr)] gap-[1.6rem] xl:grid-cols-[1fr] xl:gap-0 ">
-        <div className="bg-[var(--color-white)] p-[var(--card-padding)] rounded-[var(--card-border-radius)] mt-4 shadow-[var(--box-shadow)] cursor-pointer duration-300 ease delay-0 hover:shadow-none">
+        <div className="bg-[var(--color-white)] p-[var(--card-padding)] rounded-[var(--card-border-radius)] mt-4 shadow-[0_2rem_3rem_var(--color-light)] cursor-pointer duration-300 ease delay-0 hover:shadow-none">
           <div className="flex items-center justify-between">
             <div className="info">
               <h3 className="ml-[0.6rem] text-base">Total Sales</h3>
@@ -32,7 +32,7 @@ const Analytics = () => {
           </div>
         </div>
 
-        <div className="bg-[var(--color-white)] p-[var(--card-padding)] rounded-[var(--card-border-radius)] mt-4 shadow-[var(--box-shadow)] cursor-pointer duration-300 ease delay-0 hover:shadow-none">
+        <div className="bg-[var(--color-white)] p-[var(--card-padding)] rounded-[var(--card-border-radius)] mt-4 shadow-[0_2rem_3rem_var(--color-light)] cursor-pointer duration-300 ease delay-0 hover:shadow-none">
           <div className="flex items-center justify-between">
             <div className="info">
               <h3 className="ml-[0.6rem] text-base">Site Visit</h3>
@@ -61,7 +61,7 @@ const Analytics = () => {
           </div>
         </div>
 
-        <div className="bg-[var(--color-white)] p-[var(--card-padding)] rounded-[var(--card-border-radius)] mt-4 shadow-[var(--box-shadow)] cursor-pointer duration-300 ease delay-0 hover:shadow-none     searches">
+        <div className="bg-[var(--color-white)] p-[var(--card-padding)] rounded-[var(--card-border-radius)] mt-4 shadow-[0_2rem_3rem_var(--color-light)] cursor-pointer duration-300 ease delay-0 hover:shadow-none     searches">
           <div className="flex items-center justify-between">
             <div className="info">
               <h3 className="ml-[0.6rem] text-base">Searches</h3>

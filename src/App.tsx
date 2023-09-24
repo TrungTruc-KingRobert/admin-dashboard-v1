@@ -1,6 +1,7 @@
 // components
 import Analytics from "./components/Analytics";
 import NewUsers from "./components/NewUsers";
+import RecentOrders from "./components/RecentOrders";
 import Sidebar from "./components/Sidebar";
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
       <main className="mt-[1.4rem] md:mt-[8rem] md:py-0 md:px-[1rem]">
         <Analytics />
         <NewUsers />
+        <RecentOrders />
       </main>
     </div>
   );
