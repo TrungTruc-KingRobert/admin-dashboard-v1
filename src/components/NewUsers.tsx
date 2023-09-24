@@ -2,7 +2,7 @@ const NewUsers = () => {
   return (
     <section className="mt-[1.3rem]">
       <h2>New Users</h2>
-      <div className="bg-[var(--color-white)] p-[var(--card-padding)] rounded-[var(--card-border-radius)] mt-4 shadow-[var(--box-shadow)] flex justify-around flex-wrap gap-[1.4rem] cursor-pointer duration-300 ease delay-0 hover:shadow-none">
+      <div className="bg-[var(--color-white)] p-[var(--card-padding)] rounded-[var(--card-border-radius)] mt-4 shadow-[0_2rem_3rem_var(--color-light)] flex justify-around flex-wrap gap-[1.4rem] cursor-pointer duration-300 ease delay-0 hover:shadow-none">
         <div className="flex flex-col items-center justify-center xl:basis-2/5 md:basis-[35%]">
           <img
             src="/profile-2.jpg"

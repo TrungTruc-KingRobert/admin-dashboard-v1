@@ -35,7 +35,7 @@ const Sidebar = () => {
         </div>
       </div>
 
-      <div className="flex flex-col bg-[var(--color-white)] shadow-[var(--box-shadow)] rounded-[15px] h-[88vh] relative top-6 duration-300 ease delay-0 hover:shadow-[none]">
+      <div className="flex flex-col bg-[var(--color-white)] shadow-[0_2rem_3rem_var(--color-light)] rounded-[15px] h-[88vh] relative top-6 duration-300 ease delay-0 hover:shadow-[none]">
         <a
           href="#"
           className="group flex items-center text-[var(--color-info-dark)] h-[3.7rem] gap-4 relative ml-8 duration-300 ease delay-0 hover:text-[var(--color-primary)] xl:w-[5.6rem] md:w-full md:h-[3.4rem]"
