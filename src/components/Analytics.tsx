@@ -2,7 +2,7 @@ const Analytics = () => {
   return (
     <>
       <h1>Analytics</h1>
-      <div className="grid grid-cols-[repeat(3,1fr)] gap-[1.6rem] xl:grid-cols-[1fr] xl:gap-0 ">
+      <section className="grid grid-cols-[repeat(3,1fr)] gap-[1.6rem] xl:grid-cols-[1fr] xl:gap-0 ">
         <div className="bg-[var(--color-white)] p-[var(--card-padding)] rounded-[var(--card-border-radius)] mt-4 shadow-[var(--box-shadow)] cursor-pointer duration-300 ease delay-0 hover:shadow-none">
           <div className="flex items-center justify-between">
             <div className="info">
@@ -89,7 +89,7 @@ const Analytics = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };
