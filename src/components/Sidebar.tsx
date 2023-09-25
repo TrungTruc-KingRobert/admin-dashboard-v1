@@ -1,3 +1,6 @@
+// hooks
+import { useContext } from "react";
+
 // icons
 import { IoClose } from "react-icons/io5";
 import { BiSolidDashboard } from "react-icons/bi";
@@ -13,9 +16,17 @@ import {
   MdLogout
 } from "react-icons/md";
 
+// context
+import { AppContext } from "../contexts/AppProvider";
+
 const Sidebar = () => {
+  const { isShowNav, setIsShowNav } = useContext(AppContext);
+
   return (
-    <aside className="h-screen md:fixed md:bg-[var(--color-white)] md:w-[15rem] md:z-[3] md:shadow-[1rem_3rem_4rem_var(--color-light)] md:h-screen md:left-[-100%] md:hidden md:animate-showMenu">
+    <aside
+      style={{ display: isShowNav ? "block" : "" }}
+      className="h-screen md:fixed md:bg-[var(--color-white)] md:w-[15rem] md:z-[3] md:shadow-[1rem_3rem_4rem_var(--color-light)] md:h-screen md:left-[-100%] md:hidden md:animate-showMenu"
+    >
       <div className="flex items-center justify-between mt-[1.4rem]">
         <div className="flex gap-2 md:ml-4">
           <img
@@ -24,14 +35,14 @@ const Sidebar = () => {
             className="w-8 h-8"
           />
           <h2 className="xl:hidden md:inline">
-            Asmr<span className="text-[var(--corlor-danger)]">Prog</span>
+            King<span className="text-[var(--corlor-danger)]">Robert</span>
           </h2>
         </div>
         <div
           className="pr-4 hidden md:inline-block md:cursor-pointer"
-          id="close-btn"
+          onClick={() => setIsShowNav(false)}
         >
-          <IoClose className="text-black" />
+          <IoClose className="text-black text-[24px]" />
         </div>
       </div>
 
@@ -80,8 +91,8 @@ const Sidebar = () => {
           <h3 className="duration-300 ease delay-0 xl:hidden md:inline">
             Tickets
           </h3>
-          <span className="bg-[var(--color-danger)] py-0.5 px-1.5 text-[var(--color-white)] text-[11px] rounded-[var(--border-radius-1)]">
-            27
+          <span className="bg-[var(--color-danger)] py-0.5 px-1.5 text-[var(--color-white)] text-[11px] rounded-[0.4rem]">
+            26
           </span>
         </a>
         <a

@@ -2,7 +2,7 @@ const RecentOrders = () => {
   return (
     <section className="mt-[1.3rem] xl:w-[94%] xl:absolute xl:left-1/2 xl:transform xl:translate-x-[-50%] xl:mt-8 xl:mr-0 xl:mb-0 xl:ml-[0.8rem] md:relative md:mt-12 md:mb-0 md:mx-0 md:w-full">
       <h2 className="mb-[0.8rem]">Recent Orders</h2>
-      <table className="bg-[var(--color-white)] w-full p-[var(--card-padding)] border-separate text-center shadow-[0_2rem_3rem_var(--color-light)] rounded-[var(--card-border-radius)] duration-300 ease delay-0 hover:shadow-none xl:w-[83vw] md:w-full md:m-0">
+      <table className="bg-[var(--color-white)] w-full p-[1.8rem] border-separate text-center shadow-[0_2rem_3rem_var(--color-light)] rounded-[2rem] duration-300 ease delay-0 hover:shadow-none xl:w-[83vw] md:w-full md:m-0">
         <thead>
           <tr>
             <th className="xl:hidden">Course Name</th>
